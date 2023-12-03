@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMO Class</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Merienda:wght@300&family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- <link rel="stylesheet" href="home.html"> -->
+<style>
+  *{
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+    
+  }
+  body{
+    background-color: rgb(214, 225, 242);
+  }
+  .h-font{
+    font-family: 'Merienda',cursive;
+  }
+   /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.heading{
+   text-align: center;
+}
+.custom-bg{
+    background-color: rgb(20, 96, 9);
+    /* justify-content: center; */
+}
+.custom-bg:hover{
+    background-color: rgb(21, 38, 38);
+}
+.text-red{
+  color: red;
+}
+.graduate{
+  color:blue;
+}
+.footer{
+ color: white;
+}
+.agree{
+  color: red;
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-3 py-lg-2 shadow-sm  bg-dark position-relative sticky ">
+   
+    <img src="nav-logo2.png" alt="" srcset="" height="80px">   
+     <marquee behavior="" direction="" style="display: flex;">
+        
+       <h4 style="color: aqua;"><i class="bi bi-bank2" style="color: red;"></i>   DEMO College Is Best College For Engineering And Technology <i class="bi bi-emoji-smile-fill" style="color: yellow;"></i> <i class="bi bi-emoji-smile-fill" style="color: yellow;"></i></h4> 
+     </marquee>  
+ 
+</nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.html">DEMO College</a> -->
+      <img src="demo.png" alt="" srcset="" height="70px">
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+          <!-- <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="Dashboard.html">Student Dashbord</a>
+          </li>
+          <li class="nav-item"> -->
+          <li class="nav-item">
+            <a class="nav-link" href="fee.html">Fee details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Form.html">Exam Form</a>
+          </li>
+          
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Update profile</a> -->
+            <div class="d-flex">
+              <!-- <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#profileModal">
+                Update profile
+              </button> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          
+          <li class="nav-item">
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+            LOGIN
+          </button>
+          <button type="button" class="btn btn-outline-dark shadow-none " data-bs-toggle="modal" data-bs-target="#registerModal">
+            REGISTER
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+       <form action=""><div class="modal-header">
+          <h5 class="modal-title d-flex align-items-center">
+            <i class="bi bi-person-circle fs-3 me-2"></i>Student Login</h5>
+          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Enter Admission Number</label>
+            <input type="text" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+         
+          <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label">Password</label>
+            <input type="password" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-2">
+          <a href="Dashboard.html"> <button type="button" class="btn btn-dark shadow-none">Login</button></a> 
+          
+            <a href="javascript : void(0)" class="text-secondary text-decoration-none"> Forgot Password</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    </form>
+  
+    <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"  aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+         <form action=""><div class="modal-header">
+            <h5 class="modal-title d-flex align-items-center">
+              <i class="bi bi-person-circle fs-3 me-2"></i>Registration</h5>
+            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <strong class="text-red">NOTE: <br> 1. Your Details must be matched to your ID(Addhaar,pan,Marksheet etc) that is required at login
+          time.  <br>  2. Name, Email ,Phone and other details are not editable after the registration is done so fill carefully.</strong>
+          <br>
+          <br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 ps-0">
+                  <label for="exampleInputEmail1" class="form-label">Enter Name</label>
+                  <input type="text" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label"> Gender</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>--Select Gender--</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                  </select>
+                 </div>
+                 <div class="col-md-6 ps-0 mb-2">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Enter Address</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                  <input type="text" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                  <input type="number" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">DOB</label>
+                  <input type="date" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                 <div class="col-md-6 ps-0">
+                  <label for="exampleInputEmail1" class="form-label">Sate</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>--Select State--</option>
+                    <option value="1">Uttar Pardesh</option>
+                    <option value="2">Delhi</option>
+                    <option value="3">Other</option>
+                  </select>
+                 </div>                 
+                 <div class="col-md-6 ps-0">
+                  <label for="exampleInputEmail1" class="form-label">District</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>--Select District--</option>
+                    <option value="1">Meerut</option>
+                    <option value="2">Gorakhpur</option>
+                    <option value="3">Other</option>
+                  </select>
+                  
+                 </div>                 
+
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Pin</label>
+                  <input type="number" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Password</label>
+                  <input type="password" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2 ">
+                  <label for="exampleInputEmail1" class="form-label">ID Type</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>--Select ID Type--</option>
+                    <option value="1">Addhaar</option>
+                    <option value="2">PAN</option>
+                    <option value="3">Other</option>
+                  </select>
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">ID Number</label>
+                  <input type="text" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Picture</label>
+                  <input type="file" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="col-md-6 ps-0 mb-2">
+                  <label for="exampleInputEmail1" class="form-label">Intermediate Certificate</label>
+                  <input type="file" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+               
+                <div class="col-md-6 ps-0">
+                  <label for="exampleInputEmail1" class="form-label">Course</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>--Select Course--</option>
+                    <option value="1">UG</option>
+                    <option value="2">PG</option>
+                    <option value="3">Other</option>
+                  </select>
+                 </div>
+                 <div class="col-md-6 ps-0 mb-2">  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label agree" for="flexCheckDefault">
+                      Agree with terms and conditions <br> you must agree before submitting
+                    </label>
+                  </div>
+                 </div>     
+              </div>
+            <div class="text-center my-1">
+              <a href="text.html">
+                <button type="button" class="btn btn-dark shadow-none mb-2">Register</button>
+              </a>
+              
+            </div>
+            </div>
+           
+             </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+     
+<div class="container-fluid">
+  <div class="swiper swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="class.jpg" class="w-100 d-block"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="cam.jpg" class="w-100 d-block" />
+      </div>
+      <div class="swiper-slide">
+        <img src="lap.jpg" class="w-100 d-block"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="deg.jpg" class="w-100 d-block"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="bck.jpg" class="w-100 d-block"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="book.jpg" class="w-100 d-block"/>
+      </div>
+    </div>
+  </div>  
+</div>       
+       
+<div class="container attendence">
+  <div class="row">
+    <div class="col-lg-12 bg-white shadow p-4 rounder">
+      <h5 class="mb-4">View Attendence</h5>
+      <form action="">
+        <div class="row">
+          <div class="col-md-6 ps-0 mb-2">
+            <label for="exampleInputEmail1" class="form-label">Roll Number :</label>
+            <input type="number" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+           </div>
+           <div class="col-md-6 ps-0 mb-2">
+            <label for="exampleInputEmail1" class="form-label">Year :</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>--Select--</option>
+              <option value="1">1st</option>
+              <option value="2">2nd</option>
+              <option value="2">3rd</option>
+              <option value="2">4th</option>
+              <!-- <option value="3">Other</option> -->
+            </select>
+           </div>     
+          <div class="col-md-6 ps-0 mb-2">
+            <label for="exampleInputEmail1" class="form-label">From :</label>
+            <input type="date" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+           </div>
+          <div class="col-md-6 ps-0 mb-2">
+            <label for="exampleInputEmail1" class="form-label">To :</label>
+            <input type="date" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+           </div>
+           <div class="col-md-6 ps-0 mb-2">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>--Select Session--</option>
+              <option value="1">2022-2023</option>
+              <option value="2">2023-2024</option>
+              <!-- <option value="3">Other</option> -->
+            </select>
+           </div>
+          <div class="col-md-6 ps-0 mb-2">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>--Select--</option>
+              <option value="1">Subject wise</option>
+              <option value="2">Lecture wise</option>
+              <!-- <option value="3">Other</option> -->
+            </select>
+           </div>
+           <div class="text-center my-1">
+            <button type="submit" class="btn btn-dark shadow-none mb-2">View</button> 
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR COURSE</h2> 
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title graduate" style="color: red;">UNDER GRADUATE(UG)</h5>
+          <p class="card-text" style="color: blue;">Technical Courses(B.Tech, BCA, Bsc(Computer Science) ) <br> Non Technical Course(BA, Bsc, B.ed , Pharmacy, LLB, B.com etc).</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title graduate" style="color: red;">POST GRADUATE(PG)</h5>
+          <p class="card-text" style="color: blue;">Technical Courses(M.Tech, MCA, Msc(Computer Science) ) <br> Non Technical Course(MA, Msc, Phd , LLM, MBA ,
+            M.com, MBBS etc).</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title graduate" style="color: red;">OTHER</h5>
+          <p class="card-text" style="color: blue;">Physical Education, English,<br>NCC, Sports, Russian Culture, <br>Mathematics, Urdu, Hindi <br> Biotechnology Cultural Program etc.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="d-flex">
+      <a href="table.html" ><button type="submit" class="btn btn-dark shadow-none">VIEW TIMETABLE</button></a>
+     
+    </div>
+    <!-- <a class="text-decoration-none" href="notes.html">
+      <div class="d-flex ">
+        <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3 align-items-center mt-3 " data-bs-toggle="modal" data-bs-target="#loginModal">
+          VIEW NOTES AND LECTURES>>
+        </button>
+       
+    </div>
+    </a> -->
+    
+   
+   
+  
+   
+  
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR GALLARY</h2>  
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="award.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">AWARD DISTRIBUTION</h5>
+          <p class="card-text"></p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="charan.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHAUDHARY CHARAN SINGH</h5>
+          <p class="card-text"></p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="lab.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">B.TECH LAB</h5>
+          <p class="card-text"></p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="audi.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">AUDITORIM</h5>
+          <p class="card-text"></p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="plant.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PLANTATION</h5>
+          <p class="card-text"></p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 my-3">
+      <div class="card" style="width: 18rem;">
+        <img src="canteen.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CANTEEN</h5>
+          <p class="card-text"></p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="d-flex my-1">
+      <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3 text-center  " data-bs-toggle="modal" data-bs-target="#viewtimetableModal">
+        View more>>></Table>
+      </button>
+    </div>
+  </div>
+</div>
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TOP PLACEMENT</h2>
+   <div class="container mt-3">
+    <div class="swiper Swiper-testinomials">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile ">
+            <img src="wipro.png" width="150px">
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile ">
+            <img src="tcs.png" width="150px">
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile ">
+            <img src="Tech_Mahindra.png" width="150px">
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile ">
+            <img src="saral.jpg" width="150px">
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile ">
+            <img src="hcl.png" width="150px">
+          </div>
+        </div>
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile ">
+            <img src="nth.jpg" width="150px">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+   </div>
+   <div class="container placement mt-3">
+    <div class="row">
+      <div class="col-lg-12 bg-white shadow p-4 rounder">
+        <h3 class="mb-4 text-center">Apply For Jobs</h3>
+        <form action="">
+          <div class="row">
+            <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleInputEmail1" class="form-label">Enter  Name</label>
+              <input type="text" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+             </div>
+            <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleInputEmail1" class="form-label">Email Address</label>
+              <input type="text" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+             </div>
+            <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleFormControlTextarea1" class="form-label">Enter Address</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+           
+            <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+              <input type="number" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+             </div>
+            <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleInputEmail1" class="form-label">Admission Number</label>
+              <input type="number" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+             </div>
+           
+            <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleInputEmail1" class="form-label">Resume</label>
+              <input type="file" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+             </div>
+           
+           
+             <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>--Passing year--</option>
+                <option value="1">2023</option>
+                <option value="2">2024</option>
+                <option value="2">2025</option>
+                <option value="2">2026</option>
+                <!-- <option value="3">Other</option> -->
+              </select>
+             </div>
+            <div class="col-md-6 ps-0 mb-2">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>--Job tittle--</option>
+                <option value="1">Frontend Developer</option>
+                <option value="2">Backend Developer</option>
+                <option value="3">Full Stack Developer</option>
+              </select>
+             </div>
+
+             <div class="text-center my-1">
+              <button type="submit" class="btn btn-dark shadow-none mb-2">Submit</button> 
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+   <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Reach us</h2>   
+ <div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 p-4 mb-lg-0 mb-3 bg-white rounded">
+      <!-- <iframe class="w-100 rounded" height="320" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13961.950511323239!2d77.73933!3d28.972918000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64c980d135b1%3A0xa3c5cb2dfdfb4cb7!2sChaudhary%20Charan%20Singh%20University%2C%20Ramgarhi%2C%20Meerut%2C%20Uttar%20Pradesh%20250004!5e0!3m2!1sen!2sin!4v1699516288266!5m2!1sen!2sin"   style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106259.35962841936!2d77.71594763493954!3d28.984247691827516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64c980d135b1%3A0xa3c5cb2dfdfb4cb7!2sChaudhary%20Charan%20Singh%20University%2C%20Ramgarhi%2C%20Meerut%2C%20Uttar%20Pradesh%20250004!5e0!3m2!1sen!2sin!4v1699542150225!5m2!1sen!2sin"  height="320" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="bg-white p-4 rounded mb-4">
+        <h5>Call Us</h5>
+        <a href="tel:+919873109826" class="d-inline-block mb-2 text-decoration-none text-dark"><i class="bi bi-telephone"></i>+919873109826</a>
+      </div>
+      <div class="bg-white p-4 rounded mb-4">
+        <h5>Follow Us</h5>
+        <a href="#" class="d-inline-block mb-3 ">
+          <span class="badge bg-light text-dark fs-6 p-2"><i class="bi bi-twitter-x me-1"></i>
+          Twitter
+        </span>
+      </a>
+       <br>
+        <a href="#" class="d-inline-block mb-3 ">
+          <span class="badge bg-light text-dark fs-6 p-2"><i class="bi bi-instagram"></i>
+          Instagram
+        </span>
+      </a>
+       <br>
+        <a href="#" class="d-inline-block mb-3 ">
+          <span class="badge bg-light text-dark fs-6 p-2"><i class="bi bi-facebook"></i>
+          Facebook
+        </span>
+      </a>
+       <br>
+      </div>
+    </div>
+  </div>
+ </div>               
+<div class="container-fluid bg-dark mt-5">
+  <div class="row footer">
+    <div class="col-lg-4">
+       <h3 class="h-font fw-bold fs-3 mb-2">DEMO COLLEGE</h3>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam corporis deleniti reiciendis consequuntur ut voluptatum obcaecati ipsam sunt possimus fugit aspernatur provident delectus debitis facilis, veniam iusto minus dolorem.
+       </p>
+    </div>
+    <div class="col-lg-4">
+        <h5 class="mb-3">Links</h5>
+        <a href="home.html" class="d-inline-block mb-2  text-decoration-none">Home</a><br>
+        <a href="about.html" class="d-inline-block mb-2  text-decoration-none">About us</a><br>
+        <a href="contact.html" class="d-inline-block mb-2  text-decoration-none">Contact us</a><br>
+        <a href="#" class="d-inline-block mb-2  text-decoration-none">Course</a> <br>
+        <a href="#" class="d-inline-block mb-2  text-decoration-none">Gallary</a> <br>
+        <a href="#" class="d-inline-block mb-2  text-decoration-none">Top Placement</a>
+    </div>
+    <div class="col-lg-4">
+         <h5 class="mb-3">Follow us</h5>
+         <a href="#" class="d-inline-block text-dark text-decoration-none mb-2 ">
+          <span class="badge bg-light text-dark fs-6 p-2"><i class="bi bi-twitter-x me-1"></i>
+          Twitter
+        </span>
+      </a><br>
+      <a href="#" class="d-inline-block mb-3 ">
+        <span class="badge bg-light text-dark fs-6 p-2"><i class="bi bi-instagram"></i>
+        Instagram
+      </span>
+    </a><br>
+    <a href="#" class="d-inline-block mb-3 ">
+      <span class="badge bg-light text-dark fs-6 p-2"><i class="bi bi-facebook"></i>
+      Facebook
+    </span>
+  </a>  
+    </div>
+  </div>
+</div>
+ <h6 class="text-center bg-dark text-white p-3">@Desingend or Developed By Manish Yadav</h6>      
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     var swiper = new Swiper(".swiper-container", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop:true,
+      autoplay:{
+        delay : 1300,
+        disableOnInteraction:false
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    
+    var swiper = new Swiper(".Swiper-testinomials", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop : true,
+      autoplay : {
+          delay:1300,
+          disableOnInteraction : false,    
+      },
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+    
+  </script>
+  
+</body>
+</html>
